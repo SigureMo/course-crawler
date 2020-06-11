@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>深入了解 | Course Crawler</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    
+    <meta name="description" content="基于 Python 3 的 MOOC 课程下载工具">
+    <link rel="preload" href="/course-crawler/assets/css/0.styles.59eb4bb1.css" as="style"><link rel="preload" href="/course-crawler/assets/js/app.c21c623c.js" as="script"><link rel="preload" href="/course-crawler/assets/js/2.3de8bf3e.js" as="script"><link rel="preload" href="/course-crawler/assets/js/18.69bb14dd.js" as="script"><link rel="prefetch" href="/course-crawler/assets/js/10.d02c6eb9.js"><link rel="prefetch" href="/course-crawler/assets/js/11.05482237.js"><link rel="prefetch" href="/course-crawler/assets/js/12.02341da6.js"><link rel="prefetch" href="/course-crawler/assets/js/13.6893dc93.js"><link rel="prefetch" href="/course-crawler/assets/js/14.8eca1d25.js"><link rel="prefetch" href="/course-crawler/assets/js/15.9e3ba422.js"><link rel="prefetch" href="/course-crawler/assets/js/16.d66d412b.js"><link rel="prefetch" href="/course-crawler/assets/js/17.8f573a16.js"><link rel="prefetch" href="/course-crawler/assets/js/19.0f24f8a1.js"><link rel="prefetch" href="/course-crawler/assets/js/20.85070b31.js"><link rel="prefetch" href="/course-crawler/assets/js/21.f03247f7.js"><link rel="prefetch" href="/course-crawler/assets/js/3.4cedf126.js"><link rel="prefetch" href="/course-crawler/assets/js/4.38b2a635.js"><link rel="prefetch" href="/course-crawler/assets/js/5.cf3d44ef.js"><link rel="prefetch" href="/course-crawler/assets/js/6.797666ff.js"><link rel="prefetch" href="/course-crawler/assets/js/7.8030a46c.js"><link rel="prefetch" href="/course-crawler/assets/js/8.3e8516d5.js"><link rel="prefetch" href="/course-crawler/assets/js/9.14ca95eb.js">
+    <link rel="stylesheet" href="/course-crawler/assets/css/0.styles.59eb4bb1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/course-crawler/" class="home-link router-link-active"><!----> <span class="site-name">Course Crawler</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/course-crawler/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/course-crawler/courses/icourse163.html" class="nav-link">
+  分类
+</a></div><div class="nav-item"><a href="/course-crawler/advance/cli.html" class="nav-link">
+  进阶
+</a></div> <a href="https://github.com/SigureMo/course-crawler" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/course-crawler/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/course-crawler/courses/icourse163.html" class="nav-link">
+  分类
+</a></div><div class="nav-item"><a href="/course-crawler/advance/cli.html" class="nav-link">
+  进阶
+</a></div> <a href="https://github.com/SigureMo/course-crawler" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/course-crawler/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/course-crawler/guide/getting-started.html" class="sidebar-link">快速开始</a></li><li><a href="/course-crawler/guide/basic.html" aria-current="page" class="active sidebar-link">深入了解</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/course-crawler/guide/basic.html#课程目录结构" class="sidebar-link">课程目录结构</a></li><li class="sidebar-sub-header"><a href="/course-crawler/guide/basic.html#说明" class="sidebar-link">说明</a></li></ul></li><li><a href="/course-crawler/guide/faq.html" class="sidebar-link">FAQ</a></li><li><a href="/course-crawler/guide/known-issues.html" class="sidebar-link">已知问题</a></li><li><a href="/course-crawler/guide/notice.html" class="sidebar-link">告示板</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="深入了解"><a href="#深入了解" class="header-anchor">#</a> 深入了解</h1> <h2 id="课程目录结构"><a href="#课程目录结构" class="header-anchor">#</a> 课程目录结构</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;cousre&gt;
+|-- Outline.txt
+|-- Playlist.dpl
+|-- Files/
+|-- PDFs/
+|-- Texts/
+`-- Videos/
+    |-- Rename.bat
+    `-- Videos.txt
+</code></pre></div><h3 id="课程大纲"><a href="#课程大纲" class="header-anchor">#</a> 课程大纲</h3> <p><code>Outline.txt</code> 是课程的大纲，它的内容类似</p> <div class="language- extra-class"><pre class="language-text"><code>6.1 空间直角坐标系及向量 {1}
+  6.1.1 空间直角坐标系的基本概念 {1.1}
+    6.1.1 空间直角坐标系的基本概念（视频） {1.1.1}#
+    6.1.1 空间直角坐标系的基本概念（PPT） {1.1.1}+
+    6.1.1 空间直角坐标系的基本概念（PPT） 空间直角坐标系的基本概念.rar {1.1.1}!
+...
+</code></pre></div><p>每个级别依次增加 2 个空格的缩进，<code>{}</code> 之间的是程序生成的编号，用来唯一标识一个资源（比如视频、富文本等等）。</p> <p><code>{1.1.1}</code> 说明该视频文件以 <code>1.1.1</code> 开头，可以在 <code>Videos/</code> 中找到。如此可以方便地找到视频。</p> <p>有些后面可能有奇怪的符号，比如 <code>{1.1.1}+</code>的后面有个 <code>+</code>。下面是符号的说明：</p> <ul><li>#: 视频，可以下载到 <code>Videos/</code></li> <li>*：课件，一般是 PDF 文件，位于 <code>PDFs/</code></li> <li>+：富文本，一般是 HTML 文件，位于 <code>Texts/</code></li> <li>!：附件，位于 <code>Files/</code></li> <li>&amp;：字幕，位于 <code>Videos/</code></li></ul> <h3 id="视频地址"><a href="#视频地址" class="header-anchor">#</a> 视频地址</h3> <p><code>Videos.txt</code> 是视频的链接，它的内容类似</p> <div class="language- extra-class"><pre class="language-text"><code>http://v.stu.126.net/mooc-video/nos/mp4/2017/02/21/1005820377_aa6e1b0d92314cdfaf6dcad3351b3533_shd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee11069a7277fd2bfbd983de77f6586b3ab4d3781458cdbd61bf0041fae59dee85cb91769ba5850a28845217d0bc9bfb580015e48ffc49c659b128bfe612dda086d65894b8ef217f1626539e3c9eb40879c29b730d22bdcadb1b4f67996129275fa4c38c6336120510aea1ae1790819de86e0fa3e09eeabea1b068b3d9b9b6597acf0c219eb000a69c12ce9d568813365b3e099fcdb77c69ca7cd6141d92c122af
+http://v.stu.126.net/mooc-video/nos/mp4/2017/02/21/1005822368_a91783c5f05a49e29960d24f1dc06f15_shd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee11069a7277fd2bfbd983de77f6586b3a33090c48273cc5e338f1d269a2b016013857294759d07b499e26c45d788128b30015e48ffc49c659b128bfe612dda086d65894b8ef217f1626539e3c9eb40879c29b730d22bdcadb1b4f67996129275fa4c38c6336120510aea1ae1790819de86e0fa3e09eeabea1b068b3d9b9b6597acf0c219eb000a69c12ce9d568813365b3e099fcdb77c69ca7cd6141d92c122af
+...
+</code></pre></div><p>复制到下载工具下载，比如 <a href="https://github.com/aria2/aria2/releases" target="_blank" rel="noopener noreferrer">aria2<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、迅雷 等，也可以直接在浏览器中打开。</p> <h3 id="视频文件名"><a href="#视频文件名" class="header-anchor">#</a> 视频文件名</h3> <p><code>Rename.bat</code> （或 <code>Rename.sh</code>）用于将视频重命名，它的内容类似</p> <div class="language- extra-class"><pre class="language-text"><code>CHCP 65001
+
+REN &quot;1005820377_aa6e1b0d92314cdfaf6dcad3351b3533_shd.mp4&quot; &quot;1.1.1 空间直角坐标系的基本概念(视频）.mp4&quot;
+REN &quot;1005822368_a91783c5f05a49e29960d24f1dc06f15_shd.mp4&quot; &quot;1.2.1 向量的坐标表示(视频）.mp4&quot;
+REN &quot;1005817378_500b5301360f49c18c6f8d3406959cf5_shd.mp4&quot; &quot;1.3.1 向量的模、方向余弦、投影（视频）.mp4&quot;
+REN &quot;1005821395_ff485bb1e65145ec90bf04a259eb6b0e_shd.mp4&quot; &quot;2.1.1 向量的数量积(视频）.mp4&quot;
+REN &quot;1005821396_9180e5908bc847548a8db625af9b1ad7_shd.mp4&quot; &quot;2.2.1 向量的数量积（续）（视频）.mp4&quot;
+REN &quot;1005817386_18d7ede415ec4cb5befa71a9d790ce0f_shd.mp4&quot; &quot;2.3.1 向量的向量积（视频）.mp4&quot;
+REN &quot;1005822373_8bf3846066e045cda306bd7d27e38786_shd.mp4&quot; &quot;2.4.1 向量的向量积（续）（视频）.mp4&quot;
+REN &quot;1005899086_7780acc4ac074ed89b6301e41349a2c1_shd.mp4&quot; &quot;3.1.1 平面方程（视频）.mp4&quot;
+...
+</code></pre></div><p>下载下来的视频文件名是一团糟的，比如</p> <div class="language- extra-class"><pre class="language-text"><code>1005820377_aa6e1b0d92314cdfaf6dcad3351b3533_shd.mp4
+</code></pre></div><p>运行该文件，视频的文件名就清晰整齐了，也会按照章节次序排列。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <ul><li><code>Windows</code> 下，当视频和这个文件在同一个文件夹时直接<strong>双击</strong>该文件即可运行</li> <li><code>*nix</code>需要终端运行 <code>sh Rename.sh</code></li></ul></div> <h3 id="播放列表"><a href="#播放列表" class="header-anchor">#</a> 播放列表</h3> <p>打开 <code>Playlist.dpl</code> 即可播放 <code>Videos/</code> 中的视频。</p> <p>由于文件系统的限制，特殊字符比如 <code>&quot;</code> <code>/</code> <code>\</code> 都不允许出现在文件名中，所以文件名中的特殊字符是被删除的。假如原视频的标题是「有 3/4 的概率会下雨」，就会变成 <code>有 34 的概率会下雨</code>，就很奇怪吧。而播放的列表就可以解决这个问题，在播放列表中会显示 <code>有 3/4 的概率会下雨</code>。</p> <h2 id="说明"><a href="#说明" class="header-anchor">#</a> 说明</h2> <p>学堂在线暂时只有 <code>Books</code>，没有 <code>PDFs</code>，因为如果提供 <code>PPT</code> 的话，在讲义那一栏就有链接可以下载。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/SigureMo/course-crawler/edit/master/docs/guide/basic.md" target="_blank" rel="noopener noreferrer">在GitHub上编辑此页！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/11/2020, 8:02:49 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/course-crawler/guide/getting-started.html" class="prev">
+        快速开始
+      </a></span> <span class="next"><a href="/course-crawler/guide/faq.html">
+        FAQ
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/course-crawler/assets/js/app.c21c623c.js" defer></script><script src="/course-crawler/assets/js/2.3de8bf3e.js" defer></script><script src="/course-crawler/assets/js/18.69bb14dd.js" defer></script>
+  </body>
+</html>

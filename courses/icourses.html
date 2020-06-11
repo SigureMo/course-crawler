@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>爱课程 | Course Crawler</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    
+    <meta name="description" content="基于 Python 3 的 MOOC 课程下载工具">
+    <link rel="preload" href="/course-crawler/assets/css/0.styles.59eb4bb1.css" as="style"><link rel="preload" href="/course-crawler/assets/js/app.c21c623c.js" as="script"><link rel="preload" href="/course-crawler/assets/js/2.3de8bf3e.js" as="script"><link rel="preload" href="/course-crawler/assets/js/12.02341da6.js" as="script"><link rel="prefetch" href="/course-crawler/assets/js/10.d02c6eb9.js"><link rel="prefetch" href="/course-crawler/assets/js/11.05482237.js"><link rel="prefetch" href="/course-crawler/assets/js/13.6893dc93.js"><link rel="prefetch" href="/course-crawler/assets/js/14.8eca1d25.js"><link rel="prefetch" href="/course-crawler/assets/js/15.9e3ba422.js"><link rel="prefetch" href="/course-crawler/assets/js/16.d66d412b.js"><link rel="prefetch" href="/course-crawler/assets/js/17.8f573a16.js"><link rel="prefetch" href="/course-crawler/assets/js/18.69bb14dd.js"><link rel="prefetch" href="/course-crawler/assets/js/19.0f24f8a1.js"><link rel="prefetch" href="/course-crawler/assets/js/20.85070b31.js"><link rel="prefetch" href="/course-crawler/assets/js/21.f03247f7.js"><link rel="prefetch" href="/course-crawler/assets/js/3.4cedf126.js"><link rel="prefetch" href="/course-crawler/assets/js/4.38b2a635.js"><link rel="prefetch" href="/course-crawler/assets/js/5.cf3d44ef.js"><link rel="prefetch" href="/course-crawler/assets/js/6.797666ff.js"><link rel="prefetch" href="/course-crawler/assets/js/7.8030a46c.js"><link rel="prefetch" href="/course-crawler/assets/js/8.3e8516d5.js"><link rel="prefetch" href="/course-crawler/assets/js/9.14ca95eb.js">
+    <link rel="stylesheet" href="/course-crawler/assets/css/0.styles.59eb4bb1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/course-crawler/" class="home-link router-link-active"><!----> <span class="site-name">Course Crawler</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/course-crawler/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/course-crawler/courses/icourse163.html" class="nav-link">
+  分类
+</a></div><div class="nav-item"><a href="/course-crawler/advance/cli.html" class="nav-link">
+  进阶
+</a></div> <a href="https://github.com/SigureMo/course-crawler" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/course-crawler/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/course-crawler/courses/icourse163.html" class="nav-link">
+  分类
+</a></div><div class="nav-item"><a href="/course-crawler/advance/cli.html" class="nav-link">
+  进阶
+</a></div> <a href="https://github.com/SigureMo/course-crawler" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/course-crawler/courses/icourse163.html" class="sidebar-link">中国大学 MOOC</a></li><li><a href="/course-crawler/courses/study_163.html" class="sidebar-link">网易云课堂</a></li><li><a href="/course-crawler/courses/study_mooc.html" class="sidebar-link">网易云课堂 MOOC</a></li><li><a href="/course-crawler/courses/open_163.html" class="sidebar-link">网易公开课</a></li><li><a href="/course-crawler/courses/icourses.html" aria-current="page" class="active sidebar-link">爱课程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/course-crawler/courses/icourses.html#简介" class="sidebar-link">简介</a></li><li class="sidebar-sub-header"><a href="/course-crawler/courses/icourses.html#地址格式" class="sidebar-link">地址格式</a></li></ul></li><li><a href="/course-crawler/courses/xuetangx.html" class="sidebar-link">学堂在线</a></li><li><a href="/course-crawler/courses/cnmooc.html" class="sidebar-link">好大学在线</a></li><li><a href="/course-crawler/courses/livedu.html" class="sidebar-link">北京高校优质课程研究会</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="爱课程"><a href="#爱课程" class="header-anchor">#</a> 爱课程</h1> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <p><a href="https://www.icourse163.org/" target="_blank" rel="noopener noreferrer">爱课程<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 的资源比较多，但总体相对陈旧</p> <h2 id="地址格式"><a href="#地址格式" class="header-anchor">#</a> 地址格式</h2> <ul><li><p>「资源共享课」</p> <div class="language- extra-class"><pre class="language-text"><code>http://www.icourses.cn/sCourse/course_6076.html
+http://www.icourses.cn/web/sword/portal/shareDetails?cId=6076#/course/chapter
+</code></pre></div></li> <li><p>「视频公开课」</p> <div class="language- extra-class"><pre class="language-text"><code>http://www.icourses.cn/web/sword/portal/videoDetail?courseId=1013d845-1344-1000-b974-22f745f72788#/?resId=10195dd1-1344-1000-bbd7-22f745f72788
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>只要是以如下地址开始都可以，不用在意是在那一个视频。</p> <div class="language- extra-class"><pre class="language-text"><code>http://www.icourses.cn/web/sword/portal/videoDetail
+</code></pre></div></div></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/SigureMo/course-crawler/edit/master/docs/courses/icourses.md" target="_blank" rel="noopener noreferrer">在GitHub上编辑此页！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/11/2020, 8:02:49 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/course-crawler/courses/open_163.html" class="prev">
+        网易公开课
+      </a></span> <span class="next"><a href="/course-crawler/courses/xuetangx.html">
+        学堂在线
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/course-crawler/assets/js/app.c21c623c.js" defer></script><script src="/course-crawler/assets/js/2.3de8bf3e.js" defer></script><script src="/course-crawler/assets/js/12.02341da6.js" defer></script>
+  </body>
+</html>
